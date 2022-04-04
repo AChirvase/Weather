@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="home_feed_title">Alerts</string>
+
+</resources>
