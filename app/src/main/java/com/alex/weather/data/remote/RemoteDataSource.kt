@@ -17,6 +17,8 @@ class RemoteDataSourceImpl @Inject constructor(
     RemoteDataSource {
 
     override suspend fun getAllWeatherEvents(): List<WeatherEventResponse> {
-        return weatherApi.getAllWeatherEvents()
+        return weatherApi.getAllWeatherEvents().features.map {
+            it.properties
+        }
     }
 }

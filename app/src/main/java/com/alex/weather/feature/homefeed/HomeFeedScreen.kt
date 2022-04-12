@@ -66,8 +66,27 @@ private fun TodoListItem(
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
     ) {
+        Column {
+            Text(
+                text = item.event.toString(),
+                modifier = Modifier.padding(start = 16.dp),
+                style = TextStyle(
+                    color = Color.Black,
+                    fontSize = 14.sp
+                )
+            )
+            Text(
+                text = item.senderName.toString(),
+                modifier = Modifier.padding(start = 16.dp),
+                style = TextStyle(
+                    color = Color.Black,
+                    fontSize = 14.sp
+                )
+            )
+        }
+
         Text(
-            text = item.event,
+            text = "${item.effective} to ${item.ends}",
             modifier = Modifier.padding(start = 16.dp),
             style = TextStyle(
                 color = Color.Black,

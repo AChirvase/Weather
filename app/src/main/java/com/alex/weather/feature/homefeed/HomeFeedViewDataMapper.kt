@@ -12,7 +12,10 @@ class HomeFeedViewDataMapper @Inject constructor() {
                 HomeFeedItem.EventWeatherItem(
                     id = it.id,
                     event = it.event,
-                    description = it.description
+                    description = it.description,
+                    effective = it.effective,
+                    ends = it.ends,
+                    senderName = it.senderName
                 )
             })
         return viewData

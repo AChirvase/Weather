@@ -10,15 +10,14 @@ class WeatherEventPropertiesResponse(
 
 class WeatherEventResponse(
     val id: String,
-    val event: String,
-    val description: String,
-    val effective: String,
-    val ends: String,
-    val senderName: String,
-    val severity: String,
-    val certainty: String,
-    val affectedZonesUrlList: List<String>
-)
+    val event: String?,
+    val description: String?,
+    val effective: String?,
+    val ends: String?,
+    val senderName: String?,
+    val severity: String?,
+    val certainty: String?
+    )
 
 class AffectedZoneResponse(
     val radarStation: Boolean?

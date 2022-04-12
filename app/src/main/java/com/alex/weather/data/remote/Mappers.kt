@@ -7,6 +7,11 @@ fun WeatherEventResponse.toDomain(): WeatherEvent {
     return WeatherEvent(
         id = id,
         event = event,
-        description = description
+        description = description,
+        effective = effective,
+        ends = ends,
+        senderName = senderName,
+        severity = severity,
+        certainty = certainty
     )
 }
